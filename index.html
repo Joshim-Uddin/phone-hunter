@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-center my-5 fs-1 fw-bold"> Welcome to Phone Hunter</h1>
+        </header>
+    </div>
+    <div class="container">
+        <main>
+            <section class="container mx-auto my-5 d-flex gap-2 justify-content-center">
+              <input type="text" id="input-field">
+              <button id="search-btn" class="btn btn-primary">Search</button>
+            </section>
+            <section class="container">
+                    <div id="cards" class="row row-cols-1 row-cols-md-3 g-4">
+                        
+                      </div>
+                      <div id="show-all" class="d-flex justify-content-center my-3">
+
+                      </div>
+            </section>
+            <section id="loader" class="d-none">
+              <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+            </section>
+        </main>
+    </div>
+    <div class="modal fade" id="showPhoneDetails" tabindex="-1" aria-labelledby="phoneDetailsTitle" aria-hidden="true">
+        <div class="modal-dialog">
+          <div id="modal-title" class="modal-content">
+             <div class="modal-header">
+              <h1 class="modal-title fs-5" id="phoneDetailsTitle">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="modal-body" class="modal-body d-flex flex-column align-items-center gap-2">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
